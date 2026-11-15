@@ -20,7 +20,7 @@
 FDEVICE="gtaxllte"
 
 # gtaxllte specific
-export TARGET_DEVICE_ALT="gtaxl, gtaxllte, gtaxlltexx"
+export TARGET_DEVICE_ALT="gtaxl, gtaxlwifi, gtaxlwifixx"
 export OF_MAINTAINER="Omar"
 export FOX_BUILD_TYPE="Unofficial"
 export FOX_MAINTAINER_PATCH_VERSION="1"
