@@ -17,9 +17,9 @@
 #
 #  Please maintain this if you use this script or any part of it
 #
-FDEVICE="gtaxllte"
+FDEVICE="gtaxlwifi"
 
-# gtaxllte specific
+# gtaxlwifi specific
 export TARGET_DEVICE_ALT="gtaxl, gtaxlwifi, gtaxlwifixx"
 export OF_MAINTAINER="Omar"
 export FOX_BUILD_TYPE="Unofficial"
@@ -68,7 +68,7 @@ export OF_SCREEN_H="1920"
 
 export TW_DEFAULT_LANGUAGE="en"
 export OF_DEFAULT_TIMEZONE="WET-2"
-export FOX_LOCAL_CALLBACK_SCRIPT="device/samsung/gtaxllte/recovery/root/my_callback.sh"
+export FOX_LOCAL_CALLBACK_SCRIPT="device/samsung/gtaxlwifi/recovery/root/my_callback.sh"
 export OF_ADVANCED_SECURITY="1"
 export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
 export FOX_DELETE_AROMAFM="1"
@@ -106,4 +106,4 @@ download_magisk $FOX_USE_SPECIFIC_MAGISK_ZIP
 # use system (ROM) fingerprint where available
 export OF_USE_SYSTEM_FINGERPRINT="1"
 
-#add_lunch_combo omni_gtaxllte-eng
+#add_lunch_combo omni_gtaxlwifi-eng

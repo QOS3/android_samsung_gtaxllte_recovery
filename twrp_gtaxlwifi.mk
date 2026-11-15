@@ -10,11 +10,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from gtaxllte device
-$(call inherit-product, device/samsung/gtaxllte/device.mk)
+# Inherit from gtaxlwifi device
+$(call inherit-product, device/samsung/gtaxlwifi/device.mk)
 
-PRODUCT_DEVICE := gtaxllte
-PRODUCT_NAME := twrp_gtaxllte
+PRODUCT_DEVICE := gtaxlwifi
+PRODUCT_NAME := twrp_gtaxlwifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T585
 PRODUCT_MANUFACTURER := samsung
@@ -22,6 +22,6 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="gtaxlltexx-user 8.1.0 M1AJQ T585XXU7CUH1 release-keys"
+    PRIVATE_BUILD_DESC="gtaxlwifixx-user 8.1.0 M1AJQ T585XXU7CUH1 release-keys"
 
-BUILD_FINGERPRINT := samsung/gtaxlltexx/gtaxllte:8.1.0/M1AJQ/T585XXU7CUH1:user/release-keys
+BUILD_FINGERPRINT := samsung/gtaxlwifixx/gtaxlwifi:8.1.0/M1AJQ/T585XXU7CUH1:user/release-keys

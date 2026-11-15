@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_IMAGE="device/samsung/gtaxllte/addons/maintainer.png"
+SOURCE_IMAGE="device/samsung/gtaxlwifi/addons/maintainer.png"
 
 # Target location in the recovery ramdisk
 TARGET_DIR="$FOX_RAMDISK/twres/images/Default/About"

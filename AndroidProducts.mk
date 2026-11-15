@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_gtaxllte.mk
+    $(LOCAL_DIR)/twrp_gtaxlwifi.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_gtaxllte-eng
+    twrp_gtaxlwifi-eng
