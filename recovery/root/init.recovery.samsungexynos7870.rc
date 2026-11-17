@@ -4,6 +4,8 @@ export LD_LIBRARY_PATH /system/lib64:/system/lib64/hw
 
 on fs
     install_keyring
+    chown system system /mnt/vendor/efs
+    chmod 0771 /mnt/vendor/efs
     setprop crypto.ready 1
 
 service keystore_auth /system/bin/keystore_auth
