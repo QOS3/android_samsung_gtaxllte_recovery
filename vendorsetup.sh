@@ -33,7 +33,7 @@ export LC_ALL="C"
 export FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/BOOT"
 export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/RECOVERY"
 export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/SYSTEM"
-export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/VENDOR"
+#export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/VENDOR" disabled for now
 
 # Flashlight
 export OF_FLASHLIGHT_ENABLE="1"
@@ -73,7 +73,11 @@ export OF_ADVANCED_SECURITY="1"
 export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
 export FOX_DELETE_AROMAFM="1"
 export OF_DEVICE_WITHOUT_PERSIST="1"
+export FOX_USE_DATA_RECOVERY_FOR_SETTINGS="1"
 #export FOX_RESET_SETTINGS="0"
+#export FOX_SETTINGS_ROOT_DIRECTORY="/data/media/OFRP"
+#export FOX_MISCELLANEOUS_ROOT_DIRECTORY="/data/media/OFRP"
+#export OF_OPTIONS_LIST_NUM=6
 #OF_MANUAL_ROOT_VENDOR_ERROR_FIX" [NEW]
 
 # Magisk
