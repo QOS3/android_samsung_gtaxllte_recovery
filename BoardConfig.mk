@@ -99,38 +99,6 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
-# Additional binaries & libraries needed for recovery
-TARGET_RECOVERY_DEVICE_MODULES += \
-    android.hardware.weaver@1.0 \
-    android.system.keystore2-V1-ndk_platform \
-    android.security.authorization-ndk_platform \
-    android.security.maintenance-ndk_platform \
-    libkeystoreinfo \
-    android.hardware.security.keymint-V1-ndk_platform \
-    android.hardware.security.secureclock-V1-ndk_platform \
-    libsqlite \
-    libhwbinder \
-    libgatekeeper_aidl \
-    libkeystore-attestation-application-id \
-    android.hardware.security.secureclock-V1-ndk \
-    libf2fs_sparseblock \
-    android.security.apc-ndk_platform
-
-TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.weaver@1.0.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.system.keystore2-V1-ndk_platform.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.security.authorization-ndk_platform.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.security.maintenance-ndk_platform.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libkeystoreinfo.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.security.keymint-V1-ndk_platform.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.security.secureclock-V1-ndk_platform.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libsqlite.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libkeystore-attestation-application-id.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libhwbinder.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libgatekeeper_aidl.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.security.secureclock-V1-ndk.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libf2fs_sparseblock.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.security.apc-ndk_platform.so
 
 # TWRP Configuration
 TW_DEVICE_VERSION := 1_SeifHecker2099
